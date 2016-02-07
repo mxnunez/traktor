@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF8"?>
+<datos>
+	<empleados>
+		<empleado dni="88128207G">
+			<nombre>Esteban</nombre>
+			<apellidos>Pérez Gómez</apellidos>
+			<departamento>8</departamento>
+		</empleado>
+		<empleado dni="30300471H">
+			<nombre>Aurelio</nombre>
+			<apellidos>López Márquez</apellidos>
+			<departamento>3</departamento>
+		</empleado>
+	</empleados>
+	<proveedores>
+		<proveedor nif="82959625M">
+			<nombre>Francisco José</nombre>
+			<direccion>Calle Palmera Número 13</direccion>
+			<telefono>674898951</telefono>
+			<email>fj@gmail.com</email>
+			<web>http://www.fj.es</web>
+			<descripcion>Este proveedor suministra productos de gran calidad.</descripcion>
+		</proveedor>
+		<proveedor nif="91009405S">
+			<nombre>Alonso</nombre>
+			<direccion>Avenida Sierra número 8</direccion>
+			<telefono>655987436</telefono>
+			<email>alonso@hotmail.com</email>
+			<web>http://www.lawebdealonso.es</web>
+			<descripcion>Este proveedor suministra sólo productos al por mayor.</descripcion>
+		</proveedor>
+	</proveedores>
+	<aseguradoras>
+		<aseguradora id="1101">
+			<nombre>Seguritex SL</nombre>
+			<telefono>722655205</telefono>
+			<email>seguritex1101@seguritex.net</email>
+		</aseguradora>
+	</aseguradoras>
+	<clientes>
+		<cliente dni="68199135H">
+			<nombre>Ricardo</nombre>
+			<apellidos>Serrano Dorado</apellidos>
+			<telefono>655223309</telefono>
+			<direccion>Avenida La Plata Bloque 2 Piso 8 Planta 1 Letra E</direccion>
+			<email>rsd@hotmail.es</email>
+		</cliente>
+		<cliente dni="55637096G">
+			<nombre>Gustavo</nombre>
+			<apellidos>Hidalgo Núñez</apellidos>
+			<telefono>620220311</telefono>
+			<direccion>Calle Hermanos Machado Nº 111</direccion>
+			<email>ghn@gmail.com</email>
+		</cliente>
+	</clientes>
+	<productos>
+		<producto id="2002">
+			<proveedor>82959625M</proveedor>
+			<nombre>Rueda</nombre>
+			<precio>22.23</precio>
+			<descripcion>Ruedas de tractores de tamaño mediano.</descripcion>
+			<stocks>10</stocks>
+		</producto>
+		<producto id="2052">
+			<proveedor>82959625M</proveedor>
+			<nombre>Depósito</nombre>
+			<precio>79.11</precio>
+			<descripcion>Depósitos de 10dl de capacidad</descripcion>
+			<stocks>7</stocks>
+		</producto>
+		<producto id="3001">
+			<proveedor>91009405S</proveedor>
+			<nombre>Freno</nombre>
+			<precio>9.95</precio>
+			<descripcion>Freno para zurdos ideales para el cliente</descripcion>
+			<stocks>3</stocks>
+		</producto>
+	</productos>
+	<lineas>
+		<linea id="5555">
+			<producto>2002</producto>
+			<cantidad>100</cantidad>
+		</linea>
+		<linea id="5012">
+			<producto>2052</producto>
+			<cantidad>70</cantidad>
+		</linea>
+		<linea id="7894">
+			<producto>3001</producto>
+			<cantidad>45</cantidad>
+		</linea>
+	</lineas>
+	<facturas>
+		<factura id="2333">
+			<presupuesto>9652</presupuesto>
+			<cliente>55637096G</cliente>
+			<pagada>true</pagada>
+			<fecha>15/01/2016</fecha>
+		</factura>
+	</facturas>
+	<categorias>
+		<categoria id="2222">
+			<nombre>ABC</nombre>
+		</categoria>
+		<categoria id="1453">
+			<nombre>CDE</nombre>
+		</categoria>
+	</categorias>
+	<vehiculos>
+		<vehiculo matricula="BG 1020 ZH">
+			<categoria>2222</categoria>
+			<aseguradora>1101</aseguradora>
+			<cliente>68199135H</cliente>
+			<marca>Citroen</marca>
+			<modelo>traxtor</modelo>
+		</vehiculo>
+		<vehiculo matricula="IJ 9666 CC">
+			<categoria>1453</categoria>
+			<aseguradora>1101</aseguradora>
+			<cliente>55637096G</cliente>
+			<marca>BMW</marca>
+			<modelo>Spin</modelo>
+		</vehiculo>
+	</vehiculos>
+	<averias>
+		<averia id="6528">
+			<vehiculo>BG 1020 ZH</vehiculo>
+			<empleado>30300471H</empleado>
+			<descripcion>Avería en la puerta derecha</descripcion>
+		</averia>
+	</averias>
+	<presupuestos>
+		<presupuesto id="9652">
+			<linea>7894</linea>
+			<averia>6528</averia>
+			<precio>12.89</precio>
+			<fecha>12/12/2015</fecha>
+		</presupuesto>
+	</presupuestos>
+</datos>
