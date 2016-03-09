@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+	<html lang="es">
+		<head>
+			<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+ 			<meta charset="utf-8">
+    		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   			<meta name="viewport" content="width=device-width, initial-scale=1">
+			
+   			<!-- CSS de Bootstrap -->
+    		<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+			<!-- Optional theme -->
+			<link rel="stylesheet" href="bootstrap/bootstrap-theme.min.css">
+			<!-- CSS de Jquery-UI -->
+			<link rel="stylesheet" href="jquery/jquery-ui.min.css">
+			<!-- Mis Estilos -->
+			<link rel="stylesheet" href="css/style.css">
+
+			<title>Traktor</title>
+		</head>
+		<body>
+
+			<div class="fluid-container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="capa-logo">
+									<img class="img-responsive" src="img/logo.jpg">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<div id="acordeonGestor" class="acordeon-gestor">
+									<h2><a href="#">Cliente</a></h2>
+									<div id="panelCliente">
+										<p><input type="button" value="ALTA" class="btn btn-info"></p>
+										<p><input type="button" value="MODIFICAR" class="btn btn-warning"></p>
+										<p><input type="button" value="LISTAR" class="btn btn-success"></p>
+									</div>
+									<h2><a href="#">Vehículo</a></h2>
+									<div id="panelVehiculo">
+										<p><input type="button" value="ALTA" class="btn btn-info"></p>
+										<p><input type="button" value="MODIFICAR" class="btn btn-warning"></p>
+										<p><input type="button" value="LISTAR" class="btn btn-success"></p>
+									</div>
+									<h2><a href="#">Reparación</a></h2>
+									<div id="panelReparacion">
+										<p><input type="button" value="ALTA" class="btn btn-info"></p>
+										<p><input type="button" value="MODIFICAR" class="btn btn-warning"></p>
+										<p><input type="button" value="LISTAR" class="btn btn-success"></p>
+									</div>
+									<h2><a href="#">Tipo de Operación</a></h2>
+									<div id="panelTipoOperacion">
+										<p><input type="button" value="ALTA" class="btn btn-info"></p>
+										<p><input type="button" value="MODIFICAR" class="btn btn-warning"></p>
+										<p><input type="button" value="LISTAR" class="btn btn-success"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div id="dialogoFormularios" title=""></div>
+						<div id="dialogoAlertas" title="Mensaje"></div>
+						<div id="dialogoFiltrosVehiculos" title="Opciones de listado">
+							<div class="form-group">
+								<label for="txtCombustibleFiltro">Filtro por combustible</label>
+								<input type="text" class="form-control" id="txtCombustibleFiltro" name="txtCombustibleFiltro" placeholder="Introduzca la cadena para obtener los vehículos con combustibles que la contengan..." maxlength="10" value=""/>
+							</div>
+						</div>
+						<div id="dialogoFiltrosReparacion" title="Opciones de listado">
+							<span id="calendario1"></span>
+							<input type="hidden" id="txtCalendario1"/>
+							<span id="calendario2"></span>
+							<input type="hidden" id="txtCalendario2"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="capa-listados" id="capaListados"></div>
+			<!-- Jquery -->
+			<script src="jquery/jquery-1.12.0.min.js"></script>
+			<!-- Jquery-UI JS-->
+			<script src="jquery/jquery-ui.min.js"></script>
+			<!-- Latest compiled and minified JavaScript -->
+			<script src="bootstrap/bootstrap.min.js"></script>
+			<!-- Objetos -->
+			<script src="js/objects.js"></script>
+			<!-- Mi Codigo -->
+			<script src="js/code.js"></script>
+		</body>
+	</html>
